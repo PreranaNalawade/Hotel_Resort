@@ -1,0 +1,48 @@
+.loyalty-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Headings */
+.loyalty-container h2 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.loyalty-container h3 {
+  margin-top: 20px;
+  color: #34495e;
+}
+
+/* Error message */
+.error {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Total points */
+.loyalty-container p {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* History list */
+.loyalty-container ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.loyalty-container li {
+  padding: 8px 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.loyalty-container li:nth-child(even) {
+  background-color: #f2f2f2;
+}

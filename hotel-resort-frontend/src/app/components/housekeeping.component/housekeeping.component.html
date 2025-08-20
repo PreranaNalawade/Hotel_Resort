@@ -1,0 +1,14 @@
+<div class="housekeeping-container">
+  <h2>Housekeeping Tasks</h2>
+
+  <p *ngIf="errorMessage" class="error">{{ errorMessage }}</p>
+
+  <ul *ngIf="tasks.length > 0">
+    <li *ngFor="let task of tasks">
+      {{ task.description }}
+      <button (click)="markDone(task.id)">Done</button>
+    </li>
+  </ul>
+
+  <p *ngIf="tasks.length === 0">No housekeeping tasks pending.</p>
+</div>

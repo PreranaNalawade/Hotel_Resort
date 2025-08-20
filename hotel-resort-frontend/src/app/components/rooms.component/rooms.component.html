@@ -1,0 +1,15 @@
+<h2>Rooms</h2>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Type</th>
+    <th>Price</th>
+    <th>Status</th>
+  </tr>
+  <tr *ngFor="let room of rooms">
+    <td>{{ room.id }}</td>
+    <td>{{ room.type }}</td>
+    <td>{{ room.price }}</td>
+    <td>{{ room.status }}</td>
+  </tr>
+</table>

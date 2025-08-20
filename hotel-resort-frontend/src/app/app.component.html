@@ -1,0 +1,35 @@
+<div class="app-container">
+  <!-- Top Navbar -->
+  <header class="navbar">
+    <div class="logo">🏨 Hotel Resort</div>
+    <div class="user-info">
+      <span>Welcome, {{ user?.name || 'Guest' }}</span>
+    </div>
+  </header>
+
+  <!-- Sidebar + Main Content -->
+  <div class="content-wrapper">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <nav>
+        <ul>
+          <li><a routerLink="/dashboard" routerLinkActive="active">Dashboard</a></li>
+          <li><a routerLink="/users" routerLinkActive="active">Users</a></li>
+          <li><a routerLink="/rooms" routerLinkActive="active">Rooms</a></li>
+          <li><a routerLink="/bookings" routerLinkActive="active">Bookings</a></li>
+          <li><a routerLink="/payments" routerLinkActive="active">Payments</a></li>
+          <li><a routerLink="/restaurant-orders" routerLinkActive="active">Restaurant Orders</a></li>
+          <li><a routerLink="/housekeeping" routerLinkActive="active">Housekeeping</a></li>
+          <li><a routerLink="/feedback" routerLinkActive="active">Feedback</a></li>
+          <li><a routerLink="/loyalty-points" routerLinkActive="active">Loyalty Points</a></li>
+          <li><a routerLink="/login" routerLinkActive="active">Login</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <router-outlet></router-outlet>
+    </main>
+  </div>
+</div>

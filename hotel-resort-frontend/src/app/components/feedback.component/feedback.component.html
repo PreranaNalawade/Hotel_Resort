@@ -1,0 +1,16 @@
+<div class="feedback-container">
+  <h2>Feedback</h2>
+
+  <p *ngIf="errorMessage" class="error">{{ errorMessage }}</p>
+
+  <div class="feedback-form">
+    <textarea [(ngModel)]="newFeedback" placeholder="Enter your feedback"></textarea>
+    <button (click)="submitFeedback()">Submit</button>
+  </div>
+
+  <ul class="feedback-list">
+    <li *ngFor="let fb of feedbackList">
+      {{ fb.message }}
+    </li>
+  </ul>
+</div>

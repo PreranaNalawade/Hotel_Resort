@@ -1,0 +1,38 @@
+/* Container */
+.dashboard-container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: #f7f9fc;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+/* Heading */
+.dashboard-container h2 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+/* Role text */
+.dashboard-container p {
+  color: #34495e;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Navigation links */
+.dashboard-container nav a {
+  text-decoration: none;
+  color: #3498db;
+  font-weight: bold;
+  margin: 0 10px;
+  transition: color 0.2s ease;
+}
+
+.dashboard-container nav a:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}

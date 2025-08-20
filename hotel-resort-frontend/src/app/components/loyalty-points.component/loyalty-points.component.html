@@ -1,0 +1,16 @@
+<div class="loyalty-container">
+  <h2>Loyalty Points</h2>
+
+  <p *ngIf="errorMessage" class="error">{{ errorMessage }}</p>
+
+  <p>Total Points: {{ points }}</p>
+
+  <h3>History</h3>
+  <ul *ngIf="history.length > 0">
+    <li *ngFor="let h of history">
+      {{ h.date | date:'shortDate' }} - {{ h.description }} - {{ h.points }} pts
+    </li>
+  </ul>
+
+  <p *ngIf="history.length === 0">No loyalty transactions yet.</p>
+</div>

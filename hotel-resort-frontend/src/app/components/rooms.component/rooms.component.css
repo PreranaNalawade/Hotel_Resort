@@ -1,0 +1,40 @@
+/* Container styling */
+table {
+  width: 90%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Table header */
+th {
+  background-color: #2980b9;
+  color: white;
+  padding: 12px;
+  text-align: left;
+  border-bottom: 2px solid #1c5980;
+}
+
+/* Table rows */
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Alternate row colors */
+tr:nth-child(even) {
+  background-color: #f4f6f6;
+}
+
+/* Hover effect */
+tr:hover {
+  background-color: #d6eaf8;
+  transition: 0.2s;
+}
+
+/* Heading */
+h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}

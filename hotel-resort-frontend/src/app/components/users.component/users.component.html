@@ -1,0 +1,35 @@
+<div class="container">
+  <h2>Manage Users</h2>
+
+  <!-- Add User Form -->
+  <form (ngSubmit)="addUser()" class="form">
+    <input type="text" [(ngModel)]="newUser.name" name="name" placeholder="Name" required />
+    <input type="email" [(ngModel)]="newUser.email" name="email" placeholder="Email" required />
+    <input type="text" [(ngModel)]="newUser.phone" name="phone" placeholder="Phone" />
+    <button type="submit" (click)="  addUser()">Add User</button>
+  </form>
+
+  <!-- List of Users -->
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let u of users">
+        <td>{{ u.id }}</td>
+        <td>{{ u.name }}</td>
+        <td>{{ u.email }}</td>
+        <td>{{ u.phone }}</td>
+        <td>
+          <button (click)="deleteUser(u.id)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

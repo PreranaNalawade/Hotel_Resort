@@ -1,0 +1,30 @@
+<div class="orders-container">
+  <h2>Restaurant Orders</h2>
+
+  <p *ngIf="errorMessage" class="error">{{ errorMessage }}</p>
+
+  <table *ngIf="orders.length > 0">
+    <thead>
+      <tr>
+        <th>Order ID</th>
+        <th>Items</th>
+        <th>Total</th>
+        <th>Status</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let order of orders">
+        <td>{{ order.id }}</td>
+        <td>{{ order.items }}</td>
+        <td>{{ order.total | currency }}</td>
+        <td>{{ order.status }}</td>
+        <td>
+          <button (click)="cancelOrder(order.id)">Cancel</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p *ngIf="orders.length === 0">No restaurant orders found.</p>
+</div>
