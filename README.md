@@ -2,7 +2,11 @@
 This is a full-stack web application for managing hotel operations, built with **Angular** for the frontend and **Spring Boot** with **PostgreSQL** for the backend.
 
 ---
+## Group Member
+1. Rajnandini Ravindra Ambure
+2. Samruddhi Mahavir More
 
+---
 ## 🚀 Features
 - User management (signup, login)
 - Room management
