@@ -1,11 +1,9 @@
-# Hotel Resort Management System
-
+# 🏨 Hotel Resort Management System
 This is a full-stack web application for managing hotel operations, built with **Angular** for the frontend and **Spring Boot** with **PostgreSQL** for the backend.
 
 ---
 
-## Features
-
+## 🚀 Features
 - User management (signup, login)
 - Room management
 - Booking management
@@ -17,7 +15,7 @@ This is a full-stack web application for managing hotel operations, built with *
 
 ---
 
-## Technologies Used
+## 🛠 Technologies Used
 
 **Frontend:**
 - Angular
@@ -38,7 +36,7 @@ This is a full-stack web application for managing hotel operations, built with *
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 ```
 hotelresort1/
 | hotel-resort-frontend/
@@ -100,3 +98,58 @@ Admin and staff roles have different access rights (if implemented).
 
 ---
 
+
+## 🧩 REST API Endpoints (Backend)
+```
+| Method | Endpoint                       | Description              |
+|--------|--------------------------------|--------------------------|
+| GET    | `/api/users`                   | Get all users            |
+| POST   | `/api/users`                   | Create new user          |
+| GET    | `/api/users/{id}`              | Get user by ID           |
+| PUT    | `/api/users/{id}`              | Update user              |
+| DELETE | `/api/users/{id}`              | Delete user              |
+| GET    | `/api/bookings`                | Get all bookings         |
+| POST   | `/api/bookings`                | Create booking           |
+| DELETE | `/api/bookings/{id}`           | Cancel booking           |
+| GET    | `/api/feedback`                | Get all feedback         |
+| POST   | `/api/feedback`                | Submit feedback          |
+| ...    | ...                            | ...                      |
+```
+---
+
+## 🛠️ Configure PostgreSQL
+
+1. Create a PostgreSQL database:
+
+```sql
+CREATE DATABASE hotelresort_db;
+```
+
+---
+## ⚙️ Build and Run
+**Backend (Spring Boot)**
+```
+cd hotel-resort-backend
+mvn spring-boot:run
+```
+**Frontend (Angular)**
+```
+cd hotel-resort-frontend
+npm install
+ng serve
+```
+---
+## 📸 Sample UI
+
+<img width="1919" height="971" alt="Screenshot 2025-08-20 092019" src="https://github.com/user-attachments/assets/ce71de23-7ee1-41ca-860f-a1b70af6f619" />
+
+<img width="1916" height="964" alt="Screenshot 2025-08-20 181350" src="https://github.com/user-attachments/assets/7566de42-f4f2-4e5f-bfee-76af953d7905" />
+
+
+---
+## 👩‍💻 Contact
+```
+Name: Prerana Anand Nalawade
+Email: prerananalawade5@gmail.com
+GitHub: https://github.com/PreranaNalawade
+```
